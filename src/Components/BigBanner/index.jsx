@@ -1,13 +1,19 @@
 import React from 'react';
-import { Typography } from '@mui/material';
 import './style.css'
 
 const BigBanner = () => {
   return (
     <div className="wrapper">
-        <div className='box'>
-            <Typography variant='h3' component='h2'>Подарок за первый заказ</Typography>
+        <div className="box">
+            <div className='box-text'>
+                <h3>Подарок за первый заказ!</h3>
+                <p>Легкое говяжье - пластины</p>
+            </div>
+            <div className="box-img">
+                
+            </div>
         </div>
+
     </div>
 
   )

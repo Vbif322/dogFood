@@ -7,11 +7,23 @@
 }
 
 .box {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
     background: #d95716;
-    width: 70vw;
     border-radius: 15px;
     height: 200px;
+    width: 70vw;
+}
+
+.box-text {
+    align-self: center;
+    justify-self: center;
+}
+
+.box-img{
+    background-image: url('https://w7.pngwing.com/pngs/481/289/png-transparent-corned-beef-roast-beef-venison-pastrami-short-ribs-shredded-beef-jerky-food-beef-recipe.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 

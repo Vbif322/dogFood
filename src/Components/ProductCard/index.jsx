@@ -3,12 +3,12 @@ import {Button, Card, CardContent, CardMedia, Typography} from '@mui/material'
 
 const ProductCard = ({name, picture, price, weight}) => {
   return (
-    <Card sx={{maxWidth: 250, maxHeight: 300}}>
+    <Card sx={{maxWidth: 250, maxHeight: 350}}>
         <CardMedia
           image={picture}
           alt={name}
           title={name}
-          sx={{ height:100}}
+          sx={{ height:100, backgroundSize: 'contain'}}
         />
         <CardContent>
             <Typography variant="h5" component="div">
