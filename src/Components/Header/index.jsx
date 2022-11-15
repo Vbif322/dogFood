@@ -4,10 +4,11 @@ import './style.css';
 import {ReactComponent as FavIcon} from "./img/ic-favorites.svg";
 import {ReactComponent as CartIcon} from "./img/ic-cart.svg";
 import {ReactComponent as ProfileIcon} from "./img/ic-profile.svg";
-import { AppBar, Box, IconButton, Toolbar } from '@mui/material';
+import { AppBar, IconButton, Toolbar, Container, Typography, Box, Button } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
+import SendIcon from '@mui/icons-material/Send';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -43,39 +44,54 @@ const Search = styled('div')(({ theme }) => ({
       transition: theme.transitions.create('width'),
       width: '100%',
       [theme.breakpoints.up('sm')]: {
-        width: '12ch',
+        width: '60vw',
         '&:focus': {
-          width: '20ch',
+          width: '70vw',
         },
       },
     },
   }));
-
+  
 const Header = () => {
 
     return (
-        <AppBar position='static'>
-            <Toolbar>
-            <Logo />
-            <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-              />
-            </Search>
-                <IconButton>
-                <a href="#"><FavIcon/></a>
-                </IconButton>
-                <IconButton>
-                <a href="#"><CartIcon/></a>
-                </IconButton>
-                <IconButton>
-                <a href="#"><ProfileIcon/></a>
-                </IconButton>            
+        <AppBar position='static' sx={{bgcolor: "#ffe44d"}}>
+            <Toolbar sx={{m:2}}>
+                <Logo />
+                <Search sx={{borderRadius: '30px'}}>
+                <SearchIconWrapper>
+                <SearchIcon sx={{color: '#000'}}/>
+                </SearchIconWrapper>
+                <StyledInputBase
+                placeholder="Поиск"
+                inputProps={{ 'aria-label': 'search' }}
+                sx = {{bgcolor: "#fff3",  color: '#000', borderRadius: '30px'}}
+                />
+                </Search>
+                <Container sx={{gap: 2}}>
+                    <IconButton>
+                    <a href="#"><FavIcon/></a>
+                    </IconButton>
+                    <IconButton>
+                    <a href="#"><CartIcon/></a>
+                    </IconButton>
+                    <IconButton>
+                    <a href="#"><ProfileIcon/></a>
+                    </IconButton>
+                </Container>
+            
             </Toolbar>
+            <Box sx={{ width: 400, ml:20}}>
+                <Typography variant="h3" component="h2" color={'#000'} sx={{fontWeight:500, mb:2}}>
+                        Кравтовые лакомства для собак
+                </Typography>
+                <Typography variant="h6" component="h3"  color={'#000'} sx={{fontWeight:300}}>
+                        Всегда свежие лакомства ручной работы с доставкой по России и Миру
+                </Typography>
+                <Button variant="contained" endIcon={<SendIcon />} sx={{bgcolor:'#fff', color:'#000', borderRadius:4, mt:5, mb:8}}>
+                    Каталог
+                </Button>
+            </Box>
         </AppBar>
     )
 }
