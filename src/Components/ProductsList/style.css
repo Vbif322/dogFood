@@ -1,0 +1,6 @@
+.product-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    padding: 10px 250px;
+}

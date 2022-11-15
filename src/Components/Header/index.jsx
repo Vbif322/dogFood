@@ -44,9 +44,9 @@ const Search = styled('div')(({ theme }) => ({
       transition: theme.transitions.create('width'),
       width: '100%',
       [theme.breakpoints.up('sm')]: {
-        width: '60vw',
+        width: '50vw',
         '&:focus': {
-          width: '70vw',
+          width: '60vw',
         },
       },
     },
@@ -83,7 +83,7 @@ const Header = () => {
             </Toolbar>
             <Box sx={{ width: 400, ml:20}}>
                 <Typography variant="h3" component="h2" color={'#000'} sx={{fontWeight:500, mb:2}}>
-                        Кравтовые лакомства для собак
+                        Крафтовые лакомства для собак
                 </Typography>
                 <Typography variant="h6" component="h3"  color={'#000'} sx={{fontWeight:300}}>
                         Всегда свежие лакомства ручной работы с доставкой по России и Миру

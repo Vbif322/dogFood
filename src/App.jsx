@@ -1,11 +1,14 @@
 import React from "react";
 import Header from './Components/Header';
-import ProductCard from './Components/ProductCard'
+import data from './JSON/Products.json';
 import Footer from "./Components/Footer";
+import ProductsList from "./Components/ProductsList";
+import BigBanner from "./Components/BigBanner";
 
 export default () => {
     return <>
         <Header />
-        <ProductCard />
+        <BigBanner />
+        <ProductsList data={data} />
     </>
 }

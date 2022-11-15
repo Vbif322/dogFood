@@ -1,11 +1,11 @@
 [
     {
 
-        "id": 1,
+        "id": 0,
 		"name": "Желудки утиные сушено-вяленые",
 		"price": 380,
 		"discount": 0,
-		"wight": "1 кг",
+		"weight": "1 кг",
 		"description": "Описание demo",
 		"isFavorite": false,
 		"isCart": false,
@@ -17,11 +17,11 @@
     },
     {
 
-        "id": 2,
+        "id": 1,
 		"name": "Мелкая говяжья сушено-вяленая жилка",
 		"price": 300,
 		"discount": 0,
-		"wight": "100 г",
+		"weight": "100 г",
 		"description": "Описание demo",
 		"isFavorite": true,
 		"isCart": false,
@@ -33,11 +33,11 @@
     },
     {
 
-        "id": 3,
+        "id": 2,
 		"name": "Печенья с яблоком",
 		"price": 495,
 		"discount": 0,
-		"wight": "14 шт",
+		"weight": "14 шт",
 		"description": "Описание demo",
 		"isFavorite": false,
 		"isCart": false,
@@ -49,11 +49,11 @@
     },
     {
 
-        "id": 4,
+        "id": 3,
 		"name": "Свиные уши для собак",
 		"price": 330,
 		"discount": 0,
-		"wight": "100 г",
+		"weight": "100 г",
 		"description": "Описание demo",
 		"isFavorite": false,
 		"isCart": false,
