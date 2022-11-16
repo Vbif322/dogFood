@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "title" : "Наборы",
+        "info" : "для дрессировки от 840 ₽",
+        "color" : "#FFC618",
+        "img" : "https://react-learning.ru/image-compressed/1.jpg"
+    },
+    {
+        "id": 1,
+        "title" : "Микс масел",
+        "color" : "#18D3FF",
+        "info" : "пищевая здоровая натуральная добавка",
+        "img" : "https://react-learning.ru/image-compressed/2.jpg"
+    },
+    {
+        "id": 2,
+        "title" : "Рога северного оленя",
+        "info" : "от 10 до 30 кг.",
+        "color" : "#18FF97",
+        "img" : "https://react-learning.ru/image-compressed/3.jpg"
+    },
+    {
+        "id": 3,
+        "title" : "Слипы из шеи индейки",
+        "info" : "100% натуральное",
+        "color" : "#FF6E18",
+        "img" : "https://react-learning.ru/image-compressed/4.jpg"
+    }
+]

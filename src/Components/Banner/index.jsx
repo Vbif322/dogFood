@@ -1,9 +1,17 @@
 import React from 'react';
 import './style.css';
 
-const Banner = () => {
+const Banner = ({title, info, color, img}) => {
   return (
-    <div>Banner</div>
+    <div className="banner-wrapper">
+        <div className="banner-text">
+            <h3>{title}</h3>
+            <p>{info}</p>
+        </div>
+        <div className="banner-img">
+            <img src={img} alt={title} />
+        </div>
+    </div>
   )
 }
 
