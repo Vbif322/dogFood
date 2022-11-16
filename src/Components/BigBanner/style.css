@@ -19,11 +19,22 @@
 .box-text {
     align-self: center;
     justify-self: center;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 36px;
+    color: white;
+}
+
+p {
+    color: white;
 }
 
 .box-img{
-    background-image: url('https://w7.pngwing.com/pngs/481/289/png-transparent-corned-beef-roast-beef-venison-pastrami-short-ribs-shredded-beef-jerky-food-beef-recipe.png');
+    background-image: url('meat.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
