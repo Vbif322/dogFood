@@ -12,6 +12,9 @@ export default () => {
         <Header />
         <BigBanner />
         <ProductsList data={data} />
-        <BannerBlock ad = {ad}/>
+        <BannerBlock ad = {ad} num1 = {0} num2={1}/>
+        <ProductsList data={data} />
+        <BannerBlock ad = {ad} num1 = {2} num2={3}/>
+        <Footer />
     </>
 }
