@@ -32,7 +32,7 @@ p {
 }
 
 .box-img{
-    background-image: url('meat.png');
+    background-image: url('https://react-learning.ru/image-compressed/1.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
