@@ -2,8 +2,9 @@ import React from 'react';
 import './style.css';
 
 const Banner = ({title, info, color, img}) => {
+    const st = {background: color}
   return (
-        <div className="banner__content" style={{background: color}}>
+        <div className="banner__content" style={st}>
             <div className="banner__text">
                 <h3>{title}</h3>
                 <p>{info}</p>

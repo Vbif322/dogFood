@@ -55,10 +55,11 @@ const Search = styled('div')(({ theme }) => ({
 const Header = () => {
 
     return (
-        <AppBar position='static' sx={{bgcolor: "#ffe44d"}}>
-            <Toolbar sx={{m:2}}>
+        <div className="header__wrapper">
+            <AppBar position='static' sx={{bgcolor: "#ffe44d"}}>
+            <Toolbar sx={{m:2}} >
                 <Logo />
-                <Search sx={{borderRadius: '30px'}}>
+                <Search sx={{borderRadius: '30px', flexGrow: 1, mr:3}}>
                 <SearchIconWrapper>
                 <SearchIcon sx={{color: '#000'}}/>
                 </SearchIconWrapper>
@@ -68,7 +69,7 @@ const Header = () => {
                 sx = {{bgcolor: "#fff3",  color: '#000', borderRadius: '30px'}}
                 />
                 </Search>
-                <Container sx={{gap: 2}}>
+                <Box>
                     <IconButton>
                     <a href="#"><FavIcon/></a>
                     </IconButton>
@@ -78,7 +79,8 @@ const Header = () => {
                     <IconButton>
                     <a href="#"><ProfileIcon/></a>
                     </IconButton>
-                </Container>
+                </Box>
+                   
             
             </Toolbar>
             <Box sx={{ width: 400, ml:20}}>
@@ -93,6 +95,8 @@ const Header = () => {
                 </Button>
             </Box>
         </AppBar>
+        </div>
+        
     )
 }
 
