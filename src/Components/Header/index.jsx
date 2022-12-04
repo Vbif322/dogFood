@@ -8,7 +8,6 @@ import { AppBar, IconButton, Toolbar, Container, Typography, Box, Button } from 
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
-import SendIcon from '@mui/icons-material/Send';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -56,7 +55,7 @@ const Header = () => {
 
     return (
         <div className="header__wrapper">
-            <AppBar position='static' sx={{bgcolor: "#ffe44d"}}>
+            <AppBar position='static' sx={{bgcolor: "#ffe44d", margin: 0}}>
             <Toolbar sx={{m:2}} >
                 <Logo />
                 <Search sx={{borderRadius: '30px', flexGrow: 1, mr:3}}>
@@ -79,21 +78,9 @@ const Header = () => {
                     <IconButton>
                     <a href="#"><ProfileIcon/></a>
                     </IconButton>
-                </Box>
-                   
+                </Box>                  
             
-            </Toolbar>
-            <Box sx={{ width: 400, ml:20}}>
-                <Typography variant="h3" component="h2" color={'#000'} sx={{fontWeight:500, mb:2}}>
-                        Крафтовые лакомства для собак
-                </Typography>
-                <Typography variant="h6" component="h3"  color={'#000'} sx={{fontWeight:300}}>
-                        Всегда свежие лакомства ручной работы с доставкой по России и Миру
-                </Typography>
-                <Button variant="contained" endIcon={<SendIcon />} sx={{bgcolor:'#fff', color:'#000', borderRadius:4, mt:5, mb:8}}>
-                    Каталог
-                </Button>
-            </Box>
+            </Toolbar>          
         </AppBar>
         </div>
         
