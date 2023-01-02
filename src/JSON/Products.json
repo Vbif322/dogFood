@@ -78,53 +78,5 @@
 		"picture": "https://react-learning.ru/image-compressed/1.jpg",
 		"tags": ["none"]
 
-    },
-    {
-
-        "id": 5,
-		"name": "Мелкая говяжья сушено-вяленая жилка",
-		"price": 300,
-		"discount": 0,
-		"weight": "100 г",
-		"description": "Описание demo",
-		"isFavorite": true,
-		"isCart": false,
-		"available": true,
-		"stock": 10,
-		"picture": "https://react-learning.ru/image-compressed/1.jpg",
-		"tags": ["none"]
-
-    },
-    {
-
-        "id": 6,
-		"name": "Печенья с яблоком",
-		"price": 495,
-		"discount": 0,
-		"weight": "14 шт",
-		"description": "Описание demo",
-		"isFavorite": false,
-		"isCart": false,
-		"available": true,
-		"stock": 10,
-		"picture": "https://react-learning.ru/image-compressed/1.jpg",
-		"tags": ["none"]
-
-    },
-    {
-
-        "id": 7,
-		"name": "Свиные уши для собак",
-		"price": 330,
-		"discount": 0,
-		"weight": "100 г",
-		"description": "Описание demo",
-		"isFavorite": false,
-		"isCart": false,
-		"available": true,
-		"stock": 10,
-		"picture": "https://react-learning.ru/image-compressed/1.jpg",
-		"tags": ["none"]
-
     }
 ]

@@ -18,8 +18,8 @@ export default () => {
                     <Typography variant="h6" component="h3"  color={'#000'} sx={{fontWeight:300}}>
                             Всегда свежие лакомства ручной работы с доставкой по России и Миру
                     </Typography>
-                    <Link to="/catalog">
-                        <Button variant="contained" endIcon={<SendIcon /> } sx={{bgcolor:'#fff', color:'#000', borderRadius:4, mt:5, mb:8, textDecoration: 'none'}}>
+                    <Link to="/catalog" style={{textDecoration: 'none'}}>
+                        <Button variant="contained" endIcon={<SendIcon /> } sx={{bgcolor:'#fff', color:'#000', borderRadius:4, mt:5, mb:8}}>
                             Каталог
                         </Button>
                     </Link> 

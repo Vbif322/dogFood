@@ -12,8 +12,7 @@ export default () => {
         <Routes>
             <Route path="/" element={<Main />} /> 
             <Route path="/catalog" element={<Catalog />} />            
-        </Routes>
-            
+        </Routes>            
         <Footer />
     </>
 }
