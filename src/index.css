@@ -11,3 +11,7 @@ h1 {
 	gap: 20px;
 	color: #61dafb;
 }
+
+a {
+	text-decoration: none;
+}

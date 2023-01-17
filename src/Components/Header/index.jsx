@@ -8,6 +8,7 @@ import { AppBar, IconButton, Toolbar, Container, Typography, Box, Button } from 
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
+import { Link } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -73,7 +74,7 @@ const Header = () => {
                     <a href="#"><FavIcon/></a>
                     </IconButton>
                     <IconButton>
-                    <a href="#"><CartIcon/></a>
+                    <Link to="/cart"><CartIcon/></Link>
                     </IconButton>
                     <IconButton>
                     <a href="#"><ProfileIcon/></a>
