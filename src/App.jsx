@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 import Main from "./pages/Main";
 import Catalog from "./pages/Catalog";
 import Cart from "./pages/Cart";
+import Product from "./pages/Product"
 
 export default () => {
     return <>
@@ -13,7 +14,8 @@ export default () => {
         <Routes>
             <Route path="/" element={<Main />} /> 
             <Route path="/catalog" element={<Catalog />} />         
-            <Route path="/cart" element={<Cart />} />         
+            <Route path="/cart" element={<Cart />} />        
+            <Route path="/product" element={<Product />} />        
         </Routes>            
         <Footer />
     </>
