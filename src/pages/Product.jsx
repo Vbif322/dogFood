@@ -1,5 +1,6 @@
 import { Box, Typography, Rating, Button } from '@mui/material'
 import React from 'react';
+import AddToCart from '../Components/AddToCart/AddToCart';
 
 const Product = () => {
 
@@ -29,14 +30,14 @@ const Product = () => {
             <a href='#'>81 отзыв</a>
         </Box>
         <Box sx={{display: 'flex', alignItems: 'center'}}>
-            <Box sx={{width:'100%'}}>
+            <Box sx={{width:'70%'}}>
                 <img src='https://react-learning.ru/image-compressed/1.jpg'/>
             </Box>
             <Box sx={{display: 'flex', flexDirection: 'column', gap: 2}}>
-                <Typography>495 ₽</Typography>
-                <Box>
-                    <Button>- 0 +</Button>
-                    <Button variant='contained'> В корзину</Button>
+                <Typography variant='h6'>495 ₽</Typography>
+                <Box sx={{display: 'flex', alignItems: 'center', gap: 3}}>
+                    <AddToCart />
+                    <Button variant='contained' sx={{height: '50px', width: '40%'}}> В корзину</Button>
                 </Box>
                 <Typography>В избранное</Typography>
                 <Box sx={miniCardStyle}>
@@ -50,9 +51,16 @@ const Product = () => {
                 </Box>
             </Box>
         </Box>
-        <Typography variant='h5' fontWeight={600}>Описание</Typography>
-        <Typography>Бублик из бычьего корня - забавная, интересная, вкусная, а главное - полезная вкусняшка для вашего любимца. Неповторимый вкус этого лакомства надолго отвлечет вашего питомца от любых дел</Typography>
-        <Typography variant='h5' fontWeight={600}>Характеристики</Typography>
+        <Typography variant='h5' fontWeight={600} mb={3}>Описание</Typography>
+        <Typography  mb={5}>Бублик из бычьего корня - забавная, интересная, вкусная, а главное - полезная вкусняшка для вашего любимца. Неповторимый вкус этого лакомства надолго отвлечет вашего питомца от любых дел</Typography>
+        <Typography variant='h5' fontWeight={600} mb={3}>Характеристики</Typography>
+        <Box sx={{display: 'flex', flexDirection: 'column', gap: 3}}>
+            <Typography>Вес____________ 1 шт 120-200 гр</Typography>
+            <Typography>Цена____________ 490 ₽ за 100 гр</Typography>
+            <Typography>Польза____________ Большое содержание аминокислот и микроэлементов оказывает положительное воздействие на общий обмен веществ</Typography>
+        </Box>
+        <Typography variant='h5' fontWeight={600} mb={3} mt={5}>Отзывы</Typography>
+        <Button variant='contained' sx={{bgcolor: 'white', color: 'black', borderRadius: '15px', marginBottom: 5}}>Написать отзыв</Button>
     </Box>
   )
 }

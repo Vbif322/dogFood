@@ -1,0 +1,25 @@
+.AddToCart__wrapper {
+    width: 150px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    /* height: 36px; */
+    background-color: white;
+    border: 0;
+    font-size: 36px;
+    padding: 0;
+}
+
+p {
+    /* height: 36px; */
+    color: black;
+    font-size: 36px;
+}
