@@ -7,16 +7,29 @@ import Main from "./pages/Main";
 import Catalog from "./pages/Catalog";
 import Cart from "./pages/Cart";
 import Product from "./pages/Product"
+import api from "./Api";
+
+export const Ctx = React.createContext()
 
 export default () => {
-    return <>
+
+    const [products, setProducts] = React.useState([])
+
+    React.useEffect(()=> {
+        api.getProducts()
+    .then(data=>setProducts(data.products))
+    },[])
+
+    return (
+    <Ctx.Provider value={{products, setProducts}}>
         <Header />
         <Routes>
             <Route path="/" element={<Main />} /> 
             <Route path="/catalog" element={<Catalog />} />         
             <Route path="/cart" element={<Cart />} />        
-            <Route path="/product" element={<Product />} />        
+            <Route path="/product/:id" element={<Product />} />             
         </Routes>            
         <Footer />
-    </>
+    </Ctx.Provider>
+    )
 }

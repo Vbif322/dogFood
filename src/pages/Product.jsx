@@ -1,10 +1,23 @@
 import { Box, Typography, Rating, Button } from '@mui/material'
 import React from 'react';
+import { useParams } from 'react-router-dom';
+import api from '../Api';
 import AddToCart from '../Components/AddToCart/AddToCart';
 
 const Product = () => {
 
     const [rate, setRate] = React.useState(2.5)
+    const [prod, setProd] = React.useState({})
+
+    let params = useParams();
+
+    React.useEffect(()=> {
+        api.getProduct(params.id)
+        .then(data=>{
+            console.log(data);
+            setProd(data);
+        })
+    },[])
 
 
     const miniCardStyle= {

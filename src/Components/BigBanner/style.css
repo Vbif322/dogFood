@@ -27,11 +27,13 @@ h3 {
     color: white;
 }
 
-p {
+.body2-text {
+    font-size: 18px;
     color: white;
 }
 
 .box-img{
+    max-height: 200px;
     background-image: url('https://react-learning.ru/image-compressed/1.jpg');
     background-repeat: no-repeat;
     background-size: contain;

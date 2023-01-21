@@ -7,7 +7,7 @@ const BigBanner = () => {
         <div className="box">
             <div className='box-text'>
                 <h3>Подарок за первый заказ!</h3>
-                <p>Легкое говяжье - пластины</p>
+                <p className='body2-text'>Легкое говяжье - пластины</p>
             </div>
             <div className="box-img">
                 

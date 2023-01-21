@@ -1,9 +1,11 @@
-import { WrapText } from '@mui/icons-material';
 import React from 'react';
+import { Ctx } from '../App';
 import ProductCard from '../Components/ProductCard';
-import data from '../JSON/Products.json';
 
 const Catalog = () => {
+
+    const { products } = React.useContext(Ctx)
+    console.log(products)
 
     const st = {
         display: 'flex',
@@ -14,8 +16,8 @@ const Catalog = () => {
 
   return (
     <div style={st}>
-            {data.map(el=>(
-        <ProductCard key={el.id} {...el}/>
+            {products.map(el=>(
+        <ProductCard key={el._id} {...el}/>
     ))}
     </div>
   )

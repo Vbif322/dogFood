@@ -1,30 +1,33 @@
 import React from 'react'
-import {Button, Card, CardContent, CardMedia, Typography} from '@mui/material'
+import {Button, Card, CardContent, CardMedia, Typography } from '@mui/material'
+import { Link } from 'react-router-dom';
 
-const ProductCard = ({name, picture, price, weight}) => {
+const ProductCard = ({name, pictures, price, weight}) => {
   return (
-    <Card sx={{maxWidth: 250, maxHeight: 350}}>
-        <CardMedia
-          image={picture}
-          alt={name}
-          title={name}
-          sx={{ height:100, backgroundSize: 'contain'}}
-        />
-        <CardContent>
-            <Typography variant="h5" component="div">
-              {price} ₽
-            </Typography>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-              {weight}
-            </Typography>            
-            <Typography variant="h5" component="div">
-            {name}
-            </Typography>
-            <Button variant="contained" sx={{bgcolor: '#ffe44d', color: '#000', mt: 2}}>
-              В корзину
+    <Link to='/product/:id'>
+        <Card sx={{width: 250, height: 350, display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'center'}}>
+            <CardMedia
+            image={pictures}
+            alt={name}
+            title={name}
+            sx={{ height:100, backgroundSize: 'contain', width: '100%'}}
+            />
+            <CardContent>          
+                <Typography variant="h5" component="div">
+                {price} ₽
+                </Typography>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                {weight}
+                </Typography>            
+                <Typography variant="h5" component="div">
+                {name}
+                </Typography>
+            </CardContent>
+            <Button variant="contained" sx={{bgcolor: '#ffe44d', color: '#000', width: '50%'}}>
+                В корзину
             </Button>
-        </CardContent>
-    </Card>
+        </Card>
+    </Link>
   )
 }
 

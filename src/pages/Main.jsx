@@ -8,8 +8,12 @@ import BigBanner from "../Components/BigBanner";
 import BannerBlock from "../Components/BannerBlock";
 import {Typography, Box, Button} from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
+import { Ctx } from "../App";
 
 export default () => {
+
+    const { products } = React.useContext(Ctx)
+
     return <>
             <Box sx={{paddingLeft:20 , bgcolor:"#ffe44d", mb:20}}>
                     <Typography variant="h3" component="h2" color={'#000'} sx={{fontWeight:500, mb:2}}>
@@ -25,9 +29,9 @@ export default () => {
                     </Link> 
             </Box>
         <BigBanner />
-        <ProductsList data={data} />
+        <ProductsList cnt={6} />
         <BannerBlock ad = {ad} num1 = {0} num2={1}/>
-        <ProductsList data={data} />
+        <ProductsList cnt={12} />
         <BannerBlock ad = {ad} num1 = {2} num2={3}/>
     </>
 }

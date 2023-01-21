@@ -1,7 +1,7 @@
 class Api {
-    constructor(t) {
-        this.baseURl = "https://api.react-learning.ru/v2/group-7";
-        this.token = t;
+    constructor() {
+        this.path = "https://api.react-learning.ru/v2/group-7";
+        this.token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzZhNTEwNjU5Yjk4YjAzOGY3NzlkMDciLCJncm91cCI6Imdyb3VwLTciLCJpYXQiOjE2Njc5MTE5NDcsImV4cCI6MTY5OTQ0Nzk0N30.KTv0dS9PgOqxRU4zcCLIgqTBybVJcYjF1CEIkzhAeig';
     }
     getProducts() {
         return fetch(`${this.path}/products`, {

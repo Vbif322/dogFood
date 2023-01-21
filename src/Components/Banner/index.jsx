@@ -7,7 +7,7 @@ const Banner = ({title, info, color, img}) => {
         <div className="banner__content" style={st}>
             <div className="banner__text">
                 <h3>{title}</h3>
-                <p>{info}</p>
+                <p className='bannerBody1__text'>{info}</p>
             </div>
             <div className="banner__img">
                 <img src={img} alt={title} />
